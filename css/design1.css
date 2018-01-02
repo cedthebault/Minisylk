@@ -1,0 +1,40 @@
+/* Deplacement image header */
+#deroulement a 
+{
+	padding: 0px 0px 200px 100%;
+	/* pour les vieux navigateurs */
+	background: url(./images/Capture3.JPG) no-repeat 0px 0px;
+	background /*\**/: url(./images/Capture3.JPG) no-repeat 0px 15px\9;
+	color: black;
+	animation-name: deroulement; /* nom de l'animation */
+	animation-duration: 1s; /* temps de l'animation (4s) */
+	animation-iteration-count: 1; /* nombre de boucles (infinie) */
+	animation-timing-function: linear; /* accelération de l'animation (constant) */
+}
+
+/* deuxième étape */
+@keyframes deroulement
+{
+	0% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat -1000px 0px;}
+	100% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat 1px 0px;}
+}
+@-moz-keyframes deroulement
+{
+	0% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat -1000px 0px;}
+	100% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat 1px 0px;}
+}
+@-webkit-keyframes deroulement
+{
+	0% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat -1000px 0px;}
+	100% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat 1px 0px;}
+}
+@-ms-keyframes deroulement
+{
+	0% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat -1000px 15px;}
+	100% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat 1px 15px;}
+}
+@-o-keyframes deroulement
+{
+	0% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat -1000px 0px;}
+	100% {background:rgba(255,255,255,0) url(./images/Capture3.JPG) no-repeat 1px 0px;}
+}
