@@ -17,7 +17,7 @@
 <script src="jquery.auto-complete.js"></script>
 <link rel="stylesheet" href="jquery.auto-complete.css">
 
-<title>Appli Defi</title>
+<title>Pronostics</title>
 
     <script>
         $(function(){
@@ -79,26 +79,21 @@ SELECT{font-family:calibri;}
 
 <body height="100%" width="100%" style="background-image: url(./images/Naissance.jpeg)">
 
-<table  width="1200" height="150" bgcolor="white" align="center"  border="0" cellpadding="0" cellspacing="0" style="background-color:transparent;border-left:4px #7D26CD;border-right:4px #7D26CD;border-style: solid;border-top:4px #7D26CD;border-style: solid;border-top-right-radius: 15px;-moz-border-top-right-radius: 10px;-webkit-border-top-right-radius: 10px;border-top-left-radius: 15px;-moz-border-top-left-radius: 10px;-webkit-border-top-left-radius: 10px;border-bottom:0px" >
+<table  width="1200" height="300" bgcolor="white" align="center"  border="0" cellpadding="0" cellspacing="0" style="background-color:transparent;border-left:4px #7D26CD;border-right:4px #7D26CD;border-style: solid;border-top:4px #7D26CD;border-style: solid;border-top-right-radius: 15px;-moz-border-top-right-radius: 10px;-webkit-border-top-right-radius: 10px;border-top-left-radius: 15px;-moz-border-top-left-radius: 10px;-webkit-border-top-left-radius: 10px;border-bottom:0px" >
 	<tr>
-		<td width="210"  align="center" valign="top" bgcolor="white" style="padding-top:5px;background-repeat:no-repeat;border-top-left-radius: 15px;-moz-border-top-left-radius: 10px;-webkit-border-top-left-radius: 10px;">
+		<td width="210"  align="center" valign="top" bgcolor="white" style="background-repeat:no-repeat;border-top-left-radius: 15px;-moz-border-top-left-radius: 10px;-webkit-border-top-left-radius: 10px;">
 		
-		<img src="./images/SylkSylkette.png" width="200"  height="150" />
+		<img src="./images/Couple.jpg" width="350"  height="300" />
 		</td>
 		
-		<td width="1200" height="150" align="center" id="pagePrincipale" name="pagePrincipale" bgcolor="white" style="height:150px;width:1200px;background-image: url(./images/citrouille2.jpg); ">
-		
-		<p id="deroulement"><a href="#deroulement"></a></p>
-
-		
-		<span id="pagePrincipale" name="pagePrincipale"><font id="Titre" name="Titre" style="padding-top:10px;padding-bottom:10px;"
-		><b>&nbsp;
-		Participer &agrave; l'un des plus grand moments de notre vie
-		
-							
-						
-		</b>&nbsp;</font></span>
-				
+		<td width="1200" height="300" align="center" id="pagePrincipale" name="pagePrincipale" bgcolor="white" style="background-size:cover;background-image: url(./images/banniere.jpg); ">
+			<span id="pagePrincipale" name="pagePrincipale">
+				<font id="Titre" name="Titre" style="padding-top:10px;padding-bottom:10px;background-color: rgba(213, 244, 230, 0.3);">
+					<b>
+						&nbsp;Participer &agrave; l'un des plus grand moments de notre vie&nbsp;
+					</b>
+				</font>
+			</span>
 		</td>
 	</tr>	
 </table>
@@ -121,8 +116,8 @@ SELECT{font-family:calibri;}
 		<center><b>MENU</b></center>
 		<hr color="#7D26CD" />
 		<ul class="menu-vertical">
-			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="appliPari.php">Application Pari</a></li>
-			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="resultatPari.php">Vision des r&eacute;sultats</a></li>
+			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="appliPari.php">Pronostique</a></li>
+			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="http://bit.ly/MiniNous2018">Liste de naissance</a></li>
 		</ul>
 			<hr color="#7D26CD" /><br/>
 		

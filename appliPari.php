@@ -15,10 +15,11 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 		<td>
 			<div id="pageCentre"  name="pageCentre" class="box typeA2 alt02 inspForm">
 				<form name="inspiration" id="inspiration" action="ajoutPari.php">
-				<b>0 -</b> <span>Vos informations pour le suivi des parents : </span>
+				<b>1 -</b> <span>Vos informations pour le suivi des parents : </span>
+				</br></br>
 				Prenom <input type="text" style="width:130px" name="P1" id="P1" value="" size="25"/> Nom<input type="text" style="width:130px" name="N1" id="N1" value="" size="25"/> Email <input type="Text" style="width:200px" name="E1" id="E1" value="@" size="25"/>
 				<dl>
-				<b>1 -</b> <span>Sexe</span>
+				<b>2 -</b> <span>Sexe</span>
 				<div class="themeBlock">
 					<table border="0" >
 						<tr>
@@ -26,14 +27,13 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 									<ul>
 										<li id="cat1" class="o1"><input type="radio" name="t" id="ts1" value="1"/><label for="ts1">Petit Homme</label></li>
 										<li id="cat2" class="o2"><input type="radio" name="t" id="ts2" value="2"/><label for="ts2">Petite Femme</label></li>
-										<li id="cat3" class="o3"><input type="radio" name="t" id="ts3" value="3"/><label for="ts3">Entre les deux</label></li>
 										</ul>
 							</td>
 						</tr>
 					</table>
 				</div>
 
-				<b>2 -</b> <span>Taille(cm) - Poid(kg) - Date(dd/mm/yyyy)</span> 
+				<b>3 -</b> <span>Taille(cm) - Poid(kg) - Date(jj/mm)</span> 
 				<div class="themeBlock2" id="themeBlock2" name="themeBlock2">
 					<table border="0" >
 						<tr>
@@ -41,7 +41,7 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 									<ul>
 										<li id="cat1" class="o1"><input type="float" style="width:60px" name="ls1" id="ls1" value="0.0" size="3"/><label for="ts1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taille</label></li>
 										<li id="cat2" class="o2"><input type="float" style="width:60px"  name="ls2" id="ls2" value="0.0" size="3"/><label for="ts2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poids</label></li>
-										<li id="cat1" class="o3"><input type="text" style="width:80px" name="ls3" id="ls3" value="dd/mm/2018" size="10"/><label for="ts3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date</label></li>
+										<li id="cat1" class="o3"><input type="text" style="width:80px" name="ls3" id="ls3" value="jj/mm" size="10"/><label for="ts3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date</label></li>
 										 
 									</ul>
 							</td>
