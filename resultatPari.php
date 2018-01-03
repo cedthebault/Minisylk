@@ -61,18 +61,6 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 											$nb3 = $reqInfoDest->rowCount();
 										?>
 										<li id="cat2" class="o2"><input type="text" name="t" id="ts2" value="<?php echo $nb3 ?>" disabled /><label for="ts2">Petite Femme</label></li>
-																				<?php
-											$MaConnexion2 = new Connect();
-											$db2 = $MaConnexion2->getPDO();
-											
-											$ReqPrincipale4 = "SELECT * from AppliPari where Sexe=3";
-											
-											$reqInfoDest=$db2->query($ReqPrincipale4);
-											$dataInfoDest = $reqInfoDest->fetch();	
-											
-											$nb4 = $reqInfoDest->rowCount();
-										?>
-										<li id="cat3" class="o3"><input type="text" name="t" id="ts3" value="<?php echo $nb4 ?>" disabled /><label for="ts3">Entre les deux</label></li>
 										</ul>
 							</td>
 						</tr>

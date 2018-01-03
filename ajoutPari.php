@@ -45,6 +45,6 @@
 	$q = $db->prepare($query);
 	$q->execute() or die("VerifConnexion : Impossible d'éxécuter la requête");
 	
-	header('Location: ./resultatPari.php');
+	header('Location: ./appliPari.php');
 	
 ?>
