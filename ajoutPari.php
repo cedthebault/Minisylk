@@ -4,7 +4,8 @@
 	$MaConnexion = new connect();
 	
 	$N1=trim(strtoupper($_GET['N1']));
-	$P1=trim(strtoupper($_GET['P1']));
+	$p1=trim($_GET['P1']);
+	$P1=trim(strtoupper($p1));
 	$E1=$_GET['E1'];
 	$t=$_GET['t'];
 	$ls1=$_GET['ls1'];
@@ -45,6 +46,6 @@
 	$q = $db->prepare($query);
 	$q->execute() or die("VerifConnexion : Impossible d'éxécuter la requête");
 	
-	header('Location: ./appliPari.php');
+	header('Location: ./appliPari.php?V='.$P1);
 	
 ?>

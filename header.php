@@ -68,7 +68,7 @@ SELECT{font-family:calibri;}
 		<center><b>MENU</b></center>
 		<hr color="#7D26CD" />
 		<ul class="menu-vertical">
-			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="appliPari.php">Pronostique</a></li>
+			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="appliPari.php">Pronostic</a></li>
 			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="http://bit.ly/MiniNous2018">Liste de naissance</a></li>
 			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="resultats.php">Resultats</a></li>
 		</ul>
