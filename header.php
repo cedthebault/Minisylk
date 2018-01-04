@@ -19,54 +19,6 @@
 
 <title>Pronostics</title>
 
-    <script>
-        $(function(){
-            $('#pays').autoComplete({
-                minChars: 0,
-                source: function(term, suggest){
-                    term = term.toLowerCase();
-                    var choices = [['Afghanistan','AF'],['Afrique du Sud','ZA'],['Åland','AX'],['Albanie','AL'],['Algérie','DZ'],['Allemagne','DE'],['Andorre','AD'],['Angola','AO'],['Anguilla','AI'],['Antarctique','AQ'],['Antigua-et-Barbuda','AG'],['Antilles néerlandaises','AN'],['Arabie saoudite','SA'],['Argentine','AR'],['Arménie','AM'],['Aruba','AW'],['Australie','AU'],['Autriche','AT'],['Azerbaïdjan','AZ'],['Bahamas','BS'],['Bahreïn','BH'],['Bangladesh','BD'],['Barbade','BB'],['Belgique','BE'],['Belize','BZ'],['Bénin','BJ'],['Bermudes','BM'],['Bhoutan','BT'],['Biélorussie','BY'],['Birmanie','MM'],['Bolivie','BO'],['Bosnie-Herzégovine','BA'],['Botswana','BW'],['Brésil','BR'],['Brunei','BN'],['Bulgarie','BG'],['Burkina Faso','BF'],['Burundi','BI'],['Cambodge','KH'],['Cameroun','CM'],['Canada','CA'],['Cap-Vert','CV'],['Centrafrique','CF'],['Chili','CL'],['Chine','CN'],['Chypre','CY'],['Colombie','CO'],['Comores','KM'],['Congo-Brazzaville','CG'],['Congo-Kinshasa','CD'],['Corée du Nord','KP'],['Corée du Sud','KR'],['Costa Rica','CR'],['Côte dIvoire','CI'],['Croatie','HR'],['Cuba','CU'],['Danemark','DK'],['Djibouti','DJ'],['Dominique','DM'],['Égypte','EG'],['Émirats arabes unis','AE'],['Équateur','EC'],['Érythrée','ER'],['Espagne','ES'],['Estonie','EE'],['États-Unis','US'],['Éthiopie','ET'],['Fidji','FJ'],['Finlande','FI'],['France','FR'],['Gabon','GA'],['Gambie','GM'],['Géorgie','GE'],['Géorgie du Sud et les îles Sandwich du Sud','GS'],['Ghana','GH'],['Gibraltar','GI'],['Grèce','GR'],['Grenade','GD'],['Groenland','GL'],['Guadeloupe','GP'],['Guam','GU'],['Guatemala','GT'],['Guernesey','GG'],['Guinée','GN'],['Guinée équatoriale','GQ'],['Guinée-Bissau','GW'],['Guyana','GY'],['Guyane','GF'],['Haïti','HT'],['Honduras','HN'],['Hong Kong','HK'],['Hongrie','HU'],['Île Bouvet','BV'],['Île Christmas','CX'],['Île de Man','IM'],['Îles Caïmanes','KY'],['Îles Cocos','CC'],['Îles Cook','CK'],['Îles Féroé','FO'],['Îles Malouines (Falkland)','FK'],['Îles Mariannes du Nord','MP'],['Îles mineures éloignées des États-Unis','UM'],['Îles Salomon','SB'],['Îles Turques et Caïques','TC'],['Îles Vierges américaines','VI'],['Îles Vierges britanniques','VG'],['Inde','IN'],['Indonésie','ID'],['Irak','IQ'],['Iran','IR'],['Irlande','IE'],['Islande','IS'],['Israël','IL'],['Italie','IT'],['Jamaïque','JM'],['Japon','JP'],['Jersey','JE'],['Jordanie','JO'],['Kazakhstan','KZ'],['Kenya','KE'],['Kirghizstan','KG'],['Kiribati','KI'],['Koweït','KW'],['Laos','LA'],['Lesotho','LS'],['Lettonie','LV'],['Liban','LB'],['Libéria','LR'],['Libye','LY'],['Liechtenstein','LI'],['Lituanie','LT'],['Luxembourg','LU'],['Macao','MO'],['Macédoine','MK'],['Madagascar','MG'],['Malaisie','MY'],['Malawi','MW'],['Maldives','MV'],['Mali','ML'],['Malte','MT'],['Maroc','MA'],['Marshall','MH'],['Martinique','MQ'],['Maurice','MU'],['Mauritanie','MR'],['Mayotte','YT'],['Mexique','MX'],['Micronésie','FM'],['Moldavie','MD'],['Monaco','MC'],['Mongolie','MN'],['Monténégro','ME'],['Montserrat','MS'],['Mozambique','MZ'],['Namibie','NA'],['Nauru','NR'],['Népal','NP'],['Nicaragua','NI'],['Niger','NE'],['Nigeria','NG'],['Niué','NU'],['Norfolk','NF'],['Norvège','NO'],['Nouvelle-Calédonie','NC'],['Nouvelle-Zélande','NZ'],['Oman','OM'],['Ouganda','UG'],['Ouzbékistan','UZ'],['Pakistan','PK'],['Palaos','PW'],['Palestine','PS'],['Panamá','PA'],['Papouasie-Nouvelle-Guinée','PG'],['Paraguay','PY'],['Pays-Bas','NL'],['Pérou','PE'],['Philippines','PH'],['Pitcairn','PN'],['Pologne','PL'],['Polynésie française','PF'],['Porto Rico','PR'],['Portugal','PT'],['Qatar','QA'],['République dominicaine','DO'],['République tchèque','CZ'],['Réunion','RE'],['Roumanie','RO'],['Royaume-Uni','GB'],['Russie','RU'],['Rwanda','RW'],['Sahara occidental','EH'],['Saint-Christophe-et-Niévès','KN'],['Sainte-Hélène, île','SH'],['Sainte-Lucie','LC'],['Saint-Marin','SM'],['Saint-Pierre-et-Miquelon','PM'],['Saint-Vincent-et-les Grenadines','VC'],['Salvador','SV'],['Samoa','WS'],['Samoa américaines','AS'],['São Tomé-et-Principe','ST'],['Sénégal','SN'],['Serbie','RS'],['Seychelles','SC'],['Sierra Leone','SL'],['Singapour','SG'],['Slovaquie','SK'],['Slovénie','SI'],['Somalie','SO'],['Soudan','SD'],['Sri Lanka','LK'],['Suède','SE'],['Suisse','CH'],['Suriname','SR'],['Svalbard et île Jan Mayen','SJ'],['Swaziland','SZ'],['Syrie','SY'],['Tadjikistan','TJ'],['Taïwan','TW'],['Tanzanie','TZ'],['Tchad','TD'],['Terres australes et antarctiques françaises','TF'],['Territoire britannique de locéan Indien','IO'],['Territoires extérieurs de lAustralie','HM'],['Thaïlande','TH'],['Timor oriental','TL'],['Togo','TG'],['Tokelau','TK'],['Tonga','TO'],['Trinité-et-Tobago','TT'],['Tunisie','TN'],['Turkménistan','TM'],['Turquie','TR'],['Tuvalu','TV'],['Ukraine','UA'],['Uruguay','UY'],['Vanuatu','VU'],['Vatican','VA'],['Vénézuela','VE'],['Viêt Nam','VN'],['Wallis-et-Futuna','WF'],['Yémen','YE'],['Zambie','ZM'],['Zimbabwe','ZW']];
-                    var suggestions = [];
-                    for (i=0;i<choices.length;i++)
-                        if (~(choices[i][0]+' '+choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);
-                    suggest(suggestions);
-                },
-                renderItem: function (item, search){
-                    search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-                    var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
-                    return '<div class="autocomplete-suggestion" data-langname="'+item[0]+'" data-lang="'+item[1]+'" data-val="'+search+'"><img src="./images/img/'+item[1]+'.png"> '+item[0].replace(re, "<b>$1</b>")+'</div>';
-                },
-                onSelect: function(e, term, item){
-                    console.log('Item "'+item.data('langname')+' " selected by '+(e.type == 'keydown' ? 'pressing enter or tab' : 'mouse click')+'.');
-                    $('#pays').val(item.data('langname'));
-                }
-            });
-
-			$('#continent').autoComplete({
-                minChars: 0,
-                source: function(term, suggest){
-                    term = term.toLowerCase();
-                    var choices = [['Europe', 'eu'], ['Amérique du nord', 'usa'], ['Amérique du sud', 'ams'], ['Asie', 'asi'], ['Oceanie', 'oce']];
-                    var suggestions = [];
-                    for (i=0;i<choices.length;i++)
-                        if (~(choices[i][0]+' '+choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);
-                    suggest(suggestions);
-                },
-                renderItem: function (item, search){
-                    search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-                    var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
-                    return '<div class="autocomplete-suggestion" data-langname="'+item[0]+'" data-lang="'+item[1]+'" data-val="'+search+'"><img src="./images/img/'+item[1]+'.png"> '+item[0].replace(re, "<b>$1</b>")+'</div>';
-                },
-                onSelect: function(e, term, item){
-                    console.log('Item "'+item.data('langname')+'" selected by '+(e.type == 'keydown' ? 'pressing enter or tab' : 'mouse click')+'.');
-                    $('#continent').val(item.data('langname'));
-                }
-            });
-        });
-
-
-    </script>
-
 </head>
 
 <style type="text/css">

@@ -41,8 +41,7 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 									<ul>
 										<li id="cat1" class="o1"><input type="float" style="width:60px" name="ls1" id="ls1" value="0.0" size="3"/><label for="ts1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taille</label></li>
 										<li id="cat2" class="o2"><input type="float" style="width:60px"  name="ls2" id="ls2" value="0.0" size="3"/><label for="ts2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poids</label></li>
-										<li id="cat1" class="o3"><input type="text" style="width:80px" name="ls3" id="ls3" value="jj/mm" size="10"/><label for="ts3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date</label></li>
-										 
+										<li id="cat3" class="o3"><input type="text" style="width:80px" name="ls3" id="ls3" value="jj/mm" size="10"/><label for="ts3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date</label></li>
 									</ul>
 							</td>
 						</tr>
@@ -52,7 +51,7 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 			
 				<div align="center" style="margin-top:20px">
 			
-					<input type="submit"  value="Valider son choix&nbsp;&nbsp;" id="boutonInput" name="boutonInput" />
+					<input type="submit"  value="Valider" id="boutonInput" name="boutonInput" />
 				</div>
 				
 				</dl>
