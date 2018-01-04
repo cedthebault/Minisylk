@@ -31,7 +31,7 @@
 	else
 	{
 		//Création
-		$query = "insert into AppliPari values('','$N1','$P1','$E1','$t','$ls1','$ls2','$ls3','',".time().",'','')";
+		$query = "insert into AppliPari values('','$N1','$P1','$E1','$t','$ls1','$ls2','$ls3','1',".time().",'','')";
 	}
 
 
