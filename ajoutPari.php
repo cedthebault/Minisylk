@@ -25,27 +25,20 @@
 	
 	if($nb > 0)
 	{
-		$type = 'modif';
+		//Modif
+		$query = "update AppliPari set Email='$E1',Sexe='$t',Taille='$ls1',Poid='$ls2',Date='$ls3',Val3=".time()." where Nom = '$N1' AND Prenom ='$P1'";
 	}
 	else
 	{
-		$type = 'création';
+		//Création
+		$query = "insert into AppliPari values('','$N1','$P1','$E1','$t','$ls1','$ls2','$ls3','',".time().",'','')";
 	}
 
-	
-	if($type == 'création'){
-		$query = "insert into AppliPari values('','$N1','$P1','$E1','$t','$ls1','$ls2','$ls3','','','','')";
-		
-	}
-	else{
-		$query = "update AppliPari set Nom='$N1', Prenom='$P1',Email='$E1',Sexe='$t',Taille='$ls1',Poid='$ls2',Date='$ls3' where Nom = '$N1' AND Prenom ='$P1'";
-		
-	}
-	
+
 	$db = $MaConnexion->getPDO();
 	$q = $db->prepare($query);
 	$q->execute() or die("VerifConnexion : Impossible d'éxécuter la requête");
 	
-	header('Location: ./appliPari.php?V='.$P1);
+	header('Location: ./appliPari.php?V='.$p1);
 	
 ?>

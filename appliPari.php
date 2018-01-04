@@ -50,7 +50,7 @@ $TIMESTAMP_1102='1518303600'
 					</table>
 				</div>
 
-				<b>3 -</b> <span>Taille(cm) - Poid(kg) - Date(jj/mm)</span> 
+				<b>3 -</b> <span>Taille (cm) - Poid (kg) - Date (jj/mm)</span> 
 				<div class="themeBlock2" id="themeBlock2" name="themeBlock2">
 					<table border="0" >
 						<tr>
