@@ -1,13 +1,7 @@
 <?php
 include 'header.php';
-
-//-----------------------------récupération de l'URL courante-----------------------------------------
-$URL = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-$URL2 = parse_url($URL);
-$URL = "https://".$URL2["host"].$URL2["path"];
 ?>
-<script type="text/javascript" src="Script.js"></script>
-<script type="text/javascript" src="./javascript/prototype.js"></script>
+
 <div id="pagePrincipale" name="pagePrincipale" style="overflow:auto; height:520px;">
 	<!-------------------------------------CRITERE DE RECHERCHE--------------------------------------------->
 	<table>
@@ -16,8 +10,11 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 			<div id="pageCentre"  name="pageCentre" class="box typeA2 alt02 inspForm">
 				<form name="inspiration" id="inspiration" action="ajoutPari.php">
 				<b>1 -</b> <span>Vos informations pour le suivi des parents : </span>
-				</br></br>
-				Prenom <input type="text" style="width:130px" name="P1" id="P1" value="" size="25"/> Nom<input type="text" style="width:130px" name="N1" id="N1" value="" size="25"/> Email <input type="Text" style="width:200px" name="E1" id="E1" value="@" size="25"/>
+				</br>
+				</br>
+				Prenom <input type="text" style="width:130px" name="P1" id="P1" value="" size="25"/> 
+				Nom<input type="text" style="width:130px" name="N1" id="N1" value="" size="25"/> 
+				Email <input type="Text" style="width:200px" name="E1" id="E1" value="@" size="25"/>
 				<dl>
 				<b>2 -</b> <span>Sexe</span>
 				<div class="themeBlock">
@@ -65,6 +62,7 @@ $URL = "https://".$URL2["host"].$URL2["path"];
 	</tr>
 	</table>
 </div>
+
 <?php
 include 'footer.php';
 ?>
