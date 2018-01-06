@@ -11,6 +11,10 @@
 	$ls1=$_GET['ls1'];
 	$ls2=$_GET['ls2'];
 	$ls3=$_GET['ls3'];
+	if($N1=="" || $P1=="" || $E1=="" || $ls1=="" || $ls2=="" || $ls3=="" || $t==""){
+		header('Location: ./appliPari.php?S=""');
+		exit();
+	}
 	
 	$MaConnexion2 = new Connect();
 	$db2 = $MaConnexion2->getPDO();

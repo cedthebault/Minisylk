@@ -13,7 +13,11 @@ $TIMESTAMP_1102='1518303600'
 				<?php 
 					if (isset($_GET['V'])){
 						echo '<span style="color:green">';
-						echo 'Votre pronotic &agrave; bien &eacute;t&eacute; pris en compte '.$_GET['V'].' :) ';
+						echo 'Votre pronotic a bien &eacute;t&eacute; pris en compte '.$_GET['V'].' :) ';
+					}
+					else if (isset($_GET['S'])){
+						echo '<span style="color:red">';
+						echo "/!\ Des champs sont vides, votre pronostic n'a pas &eacute;t&eacute; pris en compte /!\ ";
 					} 
 					else if (time() < $TIMESTAMP_1102){
 						echo '<span style="color:blue">';
