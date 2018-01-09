@@ -21,12 +21,6 @@
 
 </head>
 
-<style type="text/css">
-<!--
-INPUT{font-family:calibri;}
-SELECT{font-family:calibri;}
--->
-</style>
 <?php $PAGE = $_SERVER['PHP_SELF']; ?>
 
 <body height="100%" width="100%" style="background-image: url(./images/Naissance.jpeg)">
@@ -42,7 +36,7 @@ SELECT{font-family:calibri;}
 			<span id="pagePrincipale" name="pagePrincipale">
 				<font id="Titre" name="Titre" style="padding-top:10px;padding-bottom:10px;background-color: rgba(213, 244, 230, 0.3);">
 					<b>
-						&nbsp;Participer &agrave; l'un des plus grand moments de notre vie&nbsp;
+						&nbsp;Participer &agrave; l'un des plus grand moments de n<a href="res.php">o</a>tre vie&nbsp;
 					</b>
 				</font>
 			</span>
