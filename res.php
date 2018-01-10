@@ -33,16 +33,18 @@ function calculScoreTotal($ES,$ET,$EP,$ED,$RS,$RT,$RP,$RD){
 
 
 <div id="pagePrincipale" name="pagePrincipale" style="overflow:auto; height:520px;">
+<?php
 
+if(!isset($_SESSION['id'])){
+echo'
 <form action="connexion_post.php" method="post">
 	<p>
-		<label for="user_name">user_name</label> : <input type="text" name="user_name" id="user_name" /><br />
-		<label for="mdp">mdp</label> :  <input type="text" name="mdp" id="mdp" /><br />
+		<label for="mdp">mdp</label> : <input type="password" name="mdp" id="mdp" /><br />
 		<input type="submit" value="Envoyer" />
 	</p>
-</form>
-
-<?php
+</form>';
+}else
+{
 	$MaConnexion2 = new Connect();
 	$db2 = $MaConnexion2->getPDO();
 
@@ -75,8 +77,8 @@ function calculScoreTotal($ES,$ET,$EP,$ED,$RS,$RT,$RP,$RD){
 		}
 		
 		//Close 2 prem connexion.
-		reqM->closeCursor();
-		reqMs->closeCursor();
+		$reqM->closeCursor();
+		$reqMs->closeCursor();
 		
 		print_r($moySexe." | ".$moyTaille." | ".$moyPoids);
 		echo "</br>";
@@ -117,7 +119,7 @@ function calculScoreTotal($ES,$ET,$EP,$ED,$RS,$RT,$RP,$RD){
 		print "Erreur !: " . $e->getMessage() . "<br/>";
 		die();
 	}
-	
+}	
 ?>
 
 </div>
