@@ -14,11 +14,13 @@ $chemin = "./include/";
 	if (!password_verify($_POST['mdp'], $resultat["pwd"]))
 	{
 		//echo 'Mauvais identifiant ou mot de passe ! </br>';
+		header('Location: res.php?e="Mauvais mot de passe"');
 	}
 	else
 	{
 		$_SESSION['id'] = $resultat['id'];
 		//$_SESSION['pseudo'] = $pseudo;
+		header('Location: res.php');
 	}
 	
 	//echo password_hash("MiniDou2018!",PASSWORD_DEFAULT);

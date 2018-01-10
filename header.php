@@ -65,6 +65,14 @@
 			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="appliPari.php">Pronostic</a></li>
 			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="http://bit.ly/MiniNous2018">Liste de naissance</a></li>
 			<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="resultats.php">Resultats</a></li>
+			<?php
+			if(isset($_SESSION['id'])){
+				echo 
+				'<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="res.php">Admin resultats</a></li>
+				</br>
+				<li class="mv-item"><a id="boutonEffet" name="boutonEffet" href="deconnexion.php">Deconnexion</a></li>';
+			}
+			?>
 		</ul>
 			<hr color="#7D26CD" /><br/>
 		
