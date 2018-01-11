@@ -1,6 +1,5 @@
 <?php
 include 'header.php';
-$TIMESTAMP_1102='1518303600'
 ?>
 
 <div id="pagePrincipale" name="pagePrincipale" style="overflow:auto; height:520px;">

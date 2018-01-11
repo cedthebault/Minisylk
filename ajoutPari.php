@@ -1,6 +1,7 @@
 <?php
 	$chemin = "./include/";
 	include($chemin . "Connect.php");
+	
 	$MaConnexion = new connect();
 	
 	$N1=trim(strtoupper($_GET['N1']));
@@ -26,7 +27,6 @@
 	
 	$nb = $reqInfoDest->rowCount();
 
-	
 	if($nb > 0)
 	{
 		//Modif

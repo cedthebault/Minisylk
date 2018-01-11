@@ -1,7 +1,5 @@
 <?php
 include 'header.php';
-$chemin = "./include/";
-	include($chemin . "Connect.php");
 
 //-----------------------------récupération de l'URL courante-----------------------------------------
 $URL = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];

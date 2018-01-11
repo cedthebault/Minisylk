@@ -4,24 +4,18 @@
 	<meta http-equiv="Content-Language" content="fr">
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link rel="stylesheet" href="./css/design.css" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
 	<meta http-equiv="Page-Enter" content="revealTrans(Duration=1,Transition=1)">
-
-	<script type="text/javascript" src="Script.js"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
-	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.ui/1.8.10/jquery-ui.js"></script>
-	<link rel="Stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" />
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="jquery.auto-complete.js"></script>
-	<link rel="stylesheet" href="jquery.auto-complete.css">
 
 	<title>Pronostics</title>
 
 </head>
 
-<?php $PAGE = $_SERVER['PHP_SELF']; ?>
+<?php $PAGE = $_SERVER['PHP_SELF']; 
+$chemin = "./include/";
+include($chemin . "Connect.php");
+include($chemin."utils.php");
+
+?>
 
 <body height="100%" width="100%" style="background-image: url(./images/Naissance.jpeg)">
 
