@@ -17,7 +17,7 @@ function calculScorePoids($val,$result){
 }
 
 function calculScoreDate($val,$result){
-	return calculScore($val,$result,4);
+	return calculScore($val/86400,$result/86400,3);
 }
 
 function calculScoreTotal($ES,$ET,$EP,$ED,$RS,$RT,$RP,$RD){
@@ -26,7 +26,7 @@ function calculScoreTotal($ES,$ET,$EP,$ED,$RS,$RT,$RP,$RD){
 	}else{
 		$sexe=0;
 	}
-	return $sexe+calculScorePoids($EP,$RP)+calculScoreTaille($ET,$RT);
+	return $sexe+calculScorePoids($EP,$RP)+calculScoreTaille($ET,$RT)+calculScoreDate($ED,$RD);
 }
 function getInfoTab(){
 	$MaConnexion2 = new Connect();
@@ -58,15 +58,15 @@ function getMoySexeInfoTab(){
 function dessineTableau(){
 $reqInfoDest=getInfoTab();
 echo "<table>";
-	echo "<th>Nom</th><th>Email</th><th>Sexe</th><th>Taille</th><th>Poids</th><th>Date</th><th>Score /8</th>";
+	echo "<th>Nom</th><th>Sexe</th><th>Taille</th><th>Poids</th><th>Date</th><th>Score /10</th>";
 	foreach($reqInfoDest as $row) {
 		echo "<tr>";
 		echo "<td>";
 			print_r($row['Prenom']." ".$row['Nom']);
 		echo "</td>";
-		echo "<td>";
-			print_r($row['Email']);
-		echo "</td>";
+		//echo "<td>";
+		//	print_r($row['Email']);
+		//echo "</td>";
 		echo "<td>";
 			print_r($row['Sexe']);
 		echo "</td>";
@@ -115,15 +115,21 @@ function majScores(){
 	$Sexe=$DataInfoRes['Sexe'];
 	$Taille=$DataInfoRes['Taille'];
 	$Poids=$DataInfoRes['Poid'];
-	$date=$DataInfoRes['date'];
+	//echo $DataInfoRes['Date'];echo "</br>";
+	$date=date_timestamp_get(date_create_from_format('!j/m/Y', $DataInfoRes['Date']));
+	//echo $date;echo "</br>";echo "</br>";
 	$reqInfoDest=getInfoTab();
 	
 	$MaConnexion2 = new Connect();
 	$db2 = $MaConnexion2->getPDO();
 	
 	foreach($reqInfoDest as $row) {
-		//$score = number_format(calculScoreTotal($row['Sexe'],$row['Taille'],$row['Poid'],$row['Date'],$Sexe,$Taille,$Poids,$date),2);
-		$score = 10;
+		//echo $row['Date'];echo "</br>";
+		
+		//echo date_timestamp_get(date_create_from_format('!j/m/Y', $row['Date']));echo "</br>";
+		$score = number_format(calculScoreTotal($row['Sexe'],$row['Taille'],$row['Poid'],date_timestamp_get(date_create_from_format('!j/m/Y', $row['Date'])),$Sexe,$Taille,$Poids,$date),2);
+		//echo $score;echo "</br>";echo "</br>";
+		//$score = 10;
 		//update
 		$query = "update AppliPari set Val4=:score where Nom = :nom AND Prenom = :prenom";
 		$req=$db2->prepare($query);
