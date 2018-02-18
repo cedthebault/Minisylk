@@ -58,9 +58,14 @@ function getMoySexeInfoTab(){
 function dessineTableau(){
 $reqInfoDest=getInfoTab();
 echo "<table>";
-	echo "<th>Nom</th><th>Sexe</th><th>Taille</th><th>Poids</th><th>Date</th><th>Score /10</th>";
+	echo "<th>Classement</th><th>Nom</th><th>Sexe</th><th>Taille</th><th>Poids</th><th>Date</th><th>Score /10</th>";
+	$i=0;
 	foreach($reqInfoDest as $row) {
+		$i=$i+1;
 		echo "<tr>";
+		echo "<td class='centerText'>";
+			print_r($i);
+		echo "</td>";
 		echo "<td class='centerText'>";
 			print_r($row['Prenom']." ".$row['Nom']);
 		echo "</td>";
